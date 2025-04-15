@@ -14,7 +14,7 @@ void forward_uart_to_midi(int uart_fd, RtMidiOut &midi_out) {
       if (bytes_read > 0) {
         // Forward the MIDI byte to ALSA MIDI output
         std::vector<unsigned char> message = {static_cast<unsigned char>(midi_byte)};
-        message = transform_midi_message(message); // Transform the message
+        //message = transform_midi_message(message); // Transform the message
         midi_out.sendMessage(&message);
       }
     }
@@ -30,7 +30,7 @@ void forward_midi_to_midi(RtMidiIn &midi_in, RtMidiOut &midi_out) {
       double timestamp = midi_in.getMessage(&message);
       if (!message.empty()) {
         // Transform the MIDI message before sending it to the output
-        message = transform_midi_message(message);
+        //message = transform_midi_message(message);
         midi_out.sendMessage(&message);
       }
     }
