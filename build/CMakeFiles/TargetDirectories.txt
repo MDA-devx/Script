@@ -1,0 +1,3 @@
+/home/pi/Script/build/CMakeFiles/MidiForwarding.dir
+/home/pi/Script/build/CMakeFiles/edit_cache.dir
+/home/pi/Script/build/CMakeFiles/rebuild_cache.dir

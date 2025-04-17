@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/MidiForwarding.dir/main.cpp.o CMakeFiles/MidiForwarding.dir/map4qmr.cpp.o CMakeFiles/MidiForwarding.dir/midi_forwarding.cpp.o CMakeFiles/MidiForwarding.dir/midi_transform.cpp.o CMakeFiles/MidiForwarding.dir/uart_utils.cpp.o -o MidiForwarding  -lrtmidi -lpthread 

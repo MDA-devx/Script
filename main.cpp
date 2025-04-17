@@ -5,6 +5,8 @@
 #include "midi_forwarding.h"
 #include <RtMidi.h>
 
+
+
 void signal_handler(int signal) {
   should_exit = true;
 }
@@ -16,7 +18,7 @@ int main() {
   try {
     // Open UART for MIDI input
     const char *uart_device = "/dev/serial0"; // Adjust if necessary
-    const int baud_rate = B31250;            // MIDI baud rate
+    const int baud_rate = 31250;            // MIDI baud rate
     int uart_fd = setup_uart(uart_device, baud_rate);
     if (uart_fd < 0) {
       return 1;
