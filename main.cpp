@@ -5,7 +5,10 @@
 #include "midi_forwarding.h"
 #include <RtMidi.h>
 
-
+// Define B31250 si no está definido en el sistema
+#ifndef B31250
+#define B31250 0010003
+#endif
 
 void signal_handler(int signal) {
   should_exit = true;
