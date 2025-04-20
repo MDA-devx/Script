@@ -43,4 +43,4 @@ def LoopbackTest(comPortName, comBaudRate):
         comPort = None
 
 if __name__ == "__main__":
-    LoopbackTest("/dev/serial0", 31250)
+    LoopbackTest("/dev/tty0", 31250)
